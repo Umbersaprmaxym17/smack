@@ -47,4 +47,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun sendMessageBtnClicked(view: View){
+
+    }
+
+
 }
