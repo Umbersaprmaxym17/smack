@@ -74,12 +74,11 @@ class LoginActivity : AppCompatActivity() {
         loginCreateUserBtn.isEnabled = !enable
     }
 
-    fun hideKeyboard() {
+    private fun hideKeyboard() {
         val inputManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            inputManager.hideSoftInputFromWindow(currentFocus.windowToken,0)
 
-
-
-
+        if (inputManager.isAcceptingText) {
+            inputManager.hideSoftInputFromWindow(currentFocus.windowToken, 0)
+        }
     }
 }
