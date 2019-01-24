@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
-        hideKeyboard()
+
 
 
 
@@ -92,12 +92,12 @@ class MainActivity : AppCompatActivity() {
                     val channelDesc = descTextField.text.toString()
 
                     //Create channel with channel name and description
-                    hideKeyboard()
+
 
                 }
                 .setNegativeButton("Cancel") {dialogInterface, i ->
                     // Cancel and close the dialog
-                    hideKeyboard()
+
 
                 }
                 .show()
@@ -107,6 +107,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sendMsgBtnClicked(view: View) {
+        hideKeyboard()
 
     }
 
