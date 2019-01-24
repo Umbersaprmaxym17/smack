@@ -49,9 +49,7 @@ class MainActivity : AppCompatActivity() {
         socket.connect()
     }
 
-    override fun onPause() {
-        super.onPause()
-    }
+
 
     override fun onDestroy() {
         LocalBroadcastManager.getInstance(this).unregisterReceiver(userDataChangeReceiver)
