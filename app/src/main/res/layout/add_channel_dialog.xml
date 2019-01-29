@@ -21,6 +21,6 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:text="channel description" android:id="@+id/addChannelDescTxt" android:layout_marginBottom="18dp"
-            android:layout_marginRight="18dp" android:layout_marginLeft="18dp"/>
+            android:id="@+id/addChannelDescTxt" android:layout_marginBottom="18dp"
+            android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:hint="channel description"/>
 </LinearLayout>
