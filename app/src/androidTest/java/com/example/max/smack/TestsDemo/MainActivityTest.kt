@@ -1,4 +1,4 @@
-package com.example.max.smack
+package com.example.max.smack.TestsDemo
 
 
 import android.support.test.espresso.Espresso.onView
@@ -10,6 +10,7 @@ import android.support.test.runner.AndroidJUnit4
 import android.view.View
 import android.view.ViewGroup
 import com.example.max.smack.Controller.MainActivity
+import com.example.max.smack.R
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers.`is`
