@@ -1,4 +1,4 @@
-package com.example.max.smack.TestsDemo
+package com.example.max.smack.TestsDemo.Tests
 
 
 import android.support.test.espresso.Espresso.onView
@@ -31,23 +31,10 @@ class NewUserTest {
     var mActivityTestRule = ActivityTestRule(MainActivity::class.java)
 
     @Test
-    fun newUserTest() {
-        val appCompatImageButton = onView(
-            allOf(
-                withContentDescription("Open navigation drawer"),
-                childAtPosition(
-                    allOf(
-                        withId(R.id.toolbar),
-                        childAtPosition(
-                            withClassName(`is`("android.support.design.widget.AppBarLayout")),
-                            0
-                        )
-                    ),
-                    1
-                ),
-                isDisplayed()
-            )
-        )
+    fun testNewUser() {
+        val appCompatImageButton = onView(allOf(withContentDescription("Open navigation drawer"),
+                childAtPosition(allOf(withId(R.id.toolbar),
+                    childAtPosition(withClassName(`is`("android.support.design.widget.AppBarLayout")), 0)), 1), isDisplayed()))
         appCompatImageButton.perform(click())
 
         val appCompatButton = onView(

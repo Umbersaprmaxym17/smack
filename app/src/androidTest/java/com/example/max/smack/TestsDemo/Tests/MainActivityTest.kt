@@ -1,4 +1,4 @@
-package com.example.max.smack.TestsDemo
+package com.example.max.smack.TestsDemo.Tests
 
 
 import android.support.test.espresso.Espresso.onView
@@ -29,7 +29,7 @@ class MainActivityTest {
     var mActivityTestRule = ActivityTestRule(MainActivity::class.java)
 
     @Test
-    fun mainActivityTest() {
+    fun testMainActivity() {
         val appCompatImageButton = onView(
             allOf(
                 withContentDescription("Open navigation drawer"),
