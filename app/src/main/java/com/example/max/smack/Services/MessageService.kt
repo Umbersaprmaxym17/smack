@@ -7,12 +7,14 @@ import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
 import com.example.max.smack.Controller.App
 import com.example.max.smack.Model.Channel
+import com.example.max.smack.Model.Message
 import com.example.max.smack.Utilities.URL_GET_CHANNELS
 import org.json.JSONException
 
 object MessageService {
 
     val channels = ArrayList<Channel>()
+    val message =ArrayList<Message>()
 
 
     fun getChannels(complete: (Boolean) ->Unit) {
